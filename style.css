@@ -8,44 +8,187 @@ body{
     /* background-color: red; */
 }
 
+
 @media screen and (min-width: 320px) and (max-width: 600px){
     .restriction{
         display: none;
     }
     .container{
-        width: 100%;
-        height: 100vh;
+        max-width: 600px;
+        height: auto;
         float: left;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: relative;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: black;
+        color: white;
     }
     .navigations{
         width: 100%;
-        /* height: 60px; */
-        float: left;
+        height: 70px;
+        float: 50px;
         background-color: black;
         position: fixed;
-        bottom: 0 ;
-        /* left: 0; */
+        bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .home{
-        width: 30px;
-        height: 30px;
+    ul{
+        list-style-type: none;
+    }
+    li{
         float: left;
-        /* border: 1px solid red; */
-        margin: 7%;
+        padding: 14px;
     }
-    .logo{
-        width: 100%;
+    a{
+        text-decoration: none;
     }
-    .logo1{
+    .home-page{
         width: 100%;
-        height: 100%;
-        border-radius: 50%;
+        height: auto;
+        float: left;
+        margin-top: 10px;
+        padding: 8px;
+    }
+    .insta-logo{
+        width: 50%;
+        height: 50px;
+        float: left;
+        font-family: 'Lobster', cursive;
+        font-size: 32px;
+    }
+    .like-logo, .msg-logo{
+        width: 10%;
+        height: 40px;
+        float: right;
+        margin: 5px;
+    }
+    
+    
+    
+    
+    .story-col{
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 10px;
+        /* border: 2px solid red; */
+    }
+    .story-col1, .story-col2, .story-col3, .story-col4{
+        width: 19%;
+        height: 100px;
+        float: left;
+        /* border: 2px solid red; */
+        margin: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .story-col-img{
+        width: 80px;
+        height: auto;
+        float: left;
+        /* border: 2px solid orange; */
+        border-radius: 50px;
+        /* position: relative; */
+
+    }
+    .plus-icon{
+        position: absolute;
+    top: 2.8%;
+    left: 16%;
+        width: 26px;
+        height: 26px;
+        background-color: #0096FF;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .story-username{
+        width: 19%;
+        height: auto;
+        float: left;
+        /* border: 2px solid blue; */
+        margin: 3%;
+        margin-top: -10px;
+        text-align: center;
+    }
+    .story-col-img img{
+        width: 100%;
+        border-radius: 50px;
+    }
+    .story-col2 img{
+        width: 100%;
+        border-radius: 50px;
+    }
+    .story-col3 img{
+        width: 100%;
+        border-radius: 50px;
+    }
+    .story-col4 img{
+        width: 100%;
+        border-radius: 50px;
+    }
+    
+    
+    
+    
+    .post-col{
+        width: 100%;
+        height: 500px;
+        float: left;
+        /* border: 2px solid red; */
+        margin-bottom: 69px;
+    }
+    .post-col1{
+    width: 100%;
+    height: 70px;
+    float: left;
+    /* border: 2px solid red; */
+    }
+    .post-profile{
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 50px;
+    margin-top: 3px;
+    margin-left: 14px;
+    }
+    .post-profile img{
+    width: 100%;
+    border-radius: 50px;
+    }
+    .name-info{
+    width: 72%;
+    height: 70px;
+    float: left;
+    padding: 10px;
+    }
+    .name-info h6{
+    font-size: 20px;
+    }
+    .name-info p{
+    font-size: 14px;
+    }
+    .dots{
+    width: 10%;
+    height: 70px;
+    float: right;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .post-img{
+    width: 100%;
+    height: 422px;
+    float: left;
+    /* border: 2px solid orange; */
+    }
+    .post-img img{
+    width: 100%;
+    height: 100%;
     }
 }
 
@@ -55,11 +198,16 @@ body{
 
 
 
+
 @media screen and (min-width: 600px) and (max-width: 5000px){
-    .conainer, .home, .logo, .logo1{
+    .conainer, .navigations, .home-page, .story-col, .post-col{
         display: none;
     }
     .restriction{
         display: flex;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
